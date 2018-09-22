@@ -6,7 +6,6 @@
     <title>{{ site_title }} - {% block title %}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% block head %}
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
       <link rel="stylesheet" href="../css/styles.css">
       <!-- Base js library from drupal -->
       <script src="script/jquery.min.js"></script>
@@ -17,44 +16,51 @@
   </head>
   <body>
     <!-- header -->
-    <div class="header"> 
-     <!-- header top -->
+    <div class="header">
+      <!-- menu bar -->
       <div class="header__top">
-        <div class="container"> 
-          <div class="header__top__wrapper">
-            <!-- header logo -->
-            <div class="header__logo">
-              <img src="../../images/Logo---White1.png" alt="">
+        <div class="container">
+          <div class="menu-bar">
+            <div class="logo">
+              <img src="../images/Logo---White1.png" alt="logo header">
             </div>
-            <!-- main menu -->
-              <ul class="main-menu">
+
+            <div class="main-menu">
+              <ul>
                 <li><a href="#">PRODUCTS</a></li>
                 <li><a href="#">PROJECTS</a></li>
                 <li><a href="#">RESOURCES</a></li>
                 <li><a href="#">CONTACT</a></li>
-                <li><a href="#" >LOGIN<i class="fa fa-lock"></i></a></li>
-                <li class="social fb">
-                  <i href="#" class="fab fa-facebook-f" target="_blank"></i>
-                </li>
-                <li class="social ld">
-                  <i href="#" class="fab fa-linkedin-in" target="_blank"></i>
-                </li>
-            </ul>
+                <li><a href="#" class="lock">LOGIN</a></li>
+                <li><a href="#" class="sosial fb"></a></li>
+                <li><a href="#" class="sosial linked"></a></li>
+              </ul>
             </div>
           </div>
-    </div>
-      <!-- header banner -->
-      <div class="header__banner">
-        <!-- header banner item -->
-        <div class="header__banner__item">
-          <h1 class="header__banner__title">Your vision delivered</h1>
-          <div class="header__banner__image">
-            <img src="../../images/banner1.jpg" alt="">
-          </div>          
         </div>
-        <!-- header banner item -->       
-      </div>     
-    </div class="header">
+      </div>
+      <!-- banner -->
+      <div class="header__banner">
+        <div class="header__item">
+          <div class="header__image">
+            <img src="../images/banner1.jpg" alt="">
+          </div>
+          <h2 class="header__name">YOUR VISION DELIVERED</h2>
+        </div>
+        <div class="header__item">
+          <div class="header__image">
+            <img src="../images/banner2.jpg" alt="">
+          </div>
+          <!-- <h2 class="header__name">YOUR VISION DELIVERED</h2> -->
+        </div>
+      </div>
+
+      <div class="direction-left"></div>
+      <div class="direction-right"></div>
+      <div class="direction-bottom"></div>
+    </div>
+
+    <div style="height: 1000px;"></div>
 
 
     {% block footer_scripts %}

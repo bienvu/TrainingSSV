@@ -93,3 +93,10 @@
   box-shadow: 0 0 rem(5px) rgba($color, 1);
   outline: 0 none;
 }
+
+@mixin border-arrow ($width) {
+  border-top: $width solid transparent;
+  border-right: $width solid transparent;
+  border-bottom: $width solid transparent;
+  border-left: $width solid transparent;
+}
