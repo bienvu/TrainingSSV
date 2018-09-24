@@ -1,0 +1,234 @@
+// box text
+.box-text {
+	background-color: $silver;
+	padding: 40px 0;
+
+	p {
+		color: $text-color;
+
+		span {
+			color: $link-color;
+			font-weight: bold;
+			text-transform: uppercase;
+
+			&:after {
+				content: "";
+				display: inline-block;
+				margin-left: 5px;
+				@include border-arrow(5px);
+				border-left-color: $link-color;	
+			}
+		}
+	}
+}
+
+// main box
+.main-box {
+	margin: 30px 0;
+	color: $text-color;
+	text-align: center;
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		position: relative;
+		width: 30%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+
+	&__image {
+		div {
+			line-height: 0;
+
+			img {
+				height: 145px;
+			}
+		}
+	}
+
+	&__name {
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: bold;
+		margin: 40px 0 10px;
+	}
+
+	&__description {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background: rgba($gray,.4);
+		padding: 20px;
+		box-sizing: border-box;
+		display: none;
+		&__title {
+			margin: 20px 0;
+			font-size: 20px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		&__content {
+
+		}
+	}
+
+	&__item:hover &__description {
+		display: block;
+		cursor: pointer;
+	}
+
+	&__item:hover &__image {
+		opacity: 0.05;
+	}
+}
+// grid
+.grid {
+	&__title {
+		padding: 40px 0;
+		text-align: center;
+		color: $black;
+		text-transform: uppercase;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		position: relative;
+		box-sizing: border-box;
+
+		&__name {
+			position: absolute;
+			font-size: 35px;
+			font-weight: bold;
+			width: 100%;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			padding: 0 30px;
+			box-sizing: border-box;
+			text-transform: uppercase;
+			cursor: pointer;
+		}
+	}
+
+	&__image {
+		position: relative;
+		line-height: inherit;
+
+		&__item {
+			line-height: 0;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__hover {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		box-sizing: border-box;
+		padding: 50px 30px;;
+		background: rgba($red, .7);
+		text-align: center;
+		display: none;
+
+		&__name {
+			font-size: 35px;
+			text-transform: uppercase;
+			margin: 30px;
+		}
+
+		&__content {
+
+		}
+
+		p {
+			margin: 30px 0 40px;
+		}
+	}
+
+
+	&__item:first-of-type &__hover {
+		&__name {
+			padding: 0 10px;
+			box-sizing: border-box;
+		}
+	}
+
+	&.grid--space {
+		margin: 0 0 30px -10px;
+	}
+
+	&.grid--space &__item {
+		box-sizing: border-box;
+		margin: 0 10px;
+		width: 25%;
+	}
+
+	&.grid--space &__item:last-of-type {
+		margin-right: 0;
+	}
+
+	&__image:hover &__hover {
+		display: block;
+		cursor: pointer;
+	}
+
+}
+
+// box form
+.box-form {
+	text-align: center;
+	padding: 20px 0;
+	background: $silver;
+	color: $black;
+
+	&__title {
+		font-size: 34px;
+		font-weight: bold;
+		margin: 30px 0;
+
+	}
+
+	&__row {
+		margin: 30px 0;
+
+		input {
+			outline: none;
+			border: none;
+		}
+
+		input[type="text"] {
+			width: 300px;
+			padding: 10px;
+
+			&:first-of-type {
+				margin-right: 20px;
+			}
+
+			&:last-of-type {
+				margin-left: 20px
+			}
+		}
+
+		input[type="submit"] {
+			background: transparent;
+			border: 2px solid rgba($black,.8);
+			color: $black;
+			cursor: pointer;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+// footer
+.footer {
+	&__top{
+		padding: 25px 0;
+		background: url('../images/bg-footer.jpg');
+		background-size: cover;
+	}
+
+	&__info {
+		padding: 5px 0;
+		background: $black;
+
+		p{
+			text-align: center;
+			font-size: 12px;
+		}
+	}
+}
