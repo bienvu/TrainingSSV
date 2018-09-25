@@ -1,4 +1,13 @@
-body {
-  background: red; }
+.ho, .ten {
+  background: yellow;
+  font-size: 30px; }
 
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL19jb250ZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQyxnQkFBZ0IsRUFDaEIiLCJmaWxlIjoic3R5bGVzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuXHRiYWNrZ3JvdW5kOiByZWQ7XG59Il19 */
+.ten {
+  width: 100px;
+  height: 300px; }
+  .ten__mot {
+    background: blue; }
+  .ten__hai {
+    background: black; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL19jb250YWN0LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0M7RUFFQyxtQkFBbUI7RUFDbkIsZ0JBQWUsRUFDZjs7QUFDRDtFQUVDLGFBQVk7RUFDWixjQUFhLEVBU2Q7RUFaQTtJQU1DLGlCQUFpQixFQUNqQjtFQVBEO0lBU0Msa0JBQWtCLEVBQ2xCIiwiZmlsZSI6InN0eWxlcy5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcblx0Lmhve1xuXG5cdFx0YmFja2dyb3VuZDogeWVsbG93O1xuXHRcdGZvbnQtc2l6ZTozMHB4O1xuXHR9XG5cdC50ZW57XG5cdFx0QGV4dGVuZCAuaG87XG5cdFx0d2lkdGg6MTAwcHg7XG5cdFx0aGVpZ2h0OjMwMHB4O1xuXG5cdCZfX21vdHtcblx0XHRiYWNrZ3JvdW5kOiBibHVlO1xuXHR9XG5cdCZfX2hhaXtcblx0XHRiYWNrZ3JvdW5kOiBibGFjaztcblx0fVxuXG59XG5cblxuIl19 */

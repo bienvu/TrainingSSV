@@ -1,0 +1,21 @@
+
+	.ho{
+
+		background: yellow;
+		font-size:30px;
+	}
+	.ten{
+		@extend .ho;
+		width:100px;
+		height:300px;
+
+	&__mot{
+		background: blue;
+	}
+	&__hai{
+		background: black;
+	}
+
+}
+
+

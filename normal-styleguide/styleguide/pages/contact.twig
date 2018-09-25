@@ -1,34 +1,189 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="../favicon.ico">
-    <title>{{ site_title }} - {% block title %}{% endblock %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% block head %}
-      <link rel="stylesheet" href="../css/styles.css">
-      <!-- Base js library from drupal -->
-      <script src="script/jquery.min.js"></script>
-      <script src="script/drupal/jquery.once.js"></script>
-      <script src="script/drupal/drupal.js"></script>
-      <script src="script/drupal/picturefill.js"></script>
-    {% endblock %}
-  </head>
-  <body>
-    {% block header %}
-      {% include '../layouts/navigation.twig' %}
-      <h1>{% block title %}{% endblock %}</h1>
-    {% endblock %}
-    {% block content %}
-    contact
-      {% include '../layouts/main.twig' %}
-    {% endblock %}
-    {% block footer %}
-    {% endblock %}
-    {% block footer_scripts %}
-      <script src="../js/lib/media.match.min.js"></script>
-      <script src="../js/lib/enquire.min.js"></script>
-      <script src="../js/script.js"></script>
-    {% endblock %}
-  </body>
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <title>{{ site_title }} - {% block title %}{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% block head %}
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- Base js library from drupal -->
+  <script src="script/jquery.min.js"></script>
+  <script src="script/drupal/jquery.once.js"></script>
+  <script src="script/drupal/drupal.js"></script>
+  <script src="script/drupal/picturefill.js"></script>
+  {% endblock %}
+</head>
+<body>
+ <head>
+   <!--start header-->
+   <div class="header">
+     <div class="header__brand">
+      <a href="#"><img src="images/Layer-541.png" alt="Home"/></a>
+    </div> 
+    <div class="header__text">
+      <h2>CONTACT</h2>
+    </div>
+  </div>
+</head> -->
+<!--end header-->
+<main>
+ <!--start-->  
+ <div class="menu">
+   <nav>
+     <ul>
+       <li>
+         <a href="#">Home > Contact</a>
+       </li>
+     </ul>
+   </nav>
+ </div>
+ <!--end menu-->
+ <div class="grid">
+  <div class="container">
+    <div class="grid-list">
+      <div class="grid-list__item">
+        <div class="item__left">
+
+          <div class="item__left__head">
+            <h3>HEAD OFFICE</h3>
+          </div>
+
+          <div class="item__left__content">
+            <div class="icon">
+            <div class="icon__img">
+              <img src="images/Location.png" alt="dia diem">
+            </div>
+            <h5>20 Holbeche Road Arndell Park, NSW 2148</h5>
+            <br>
+          </div>
+
+          <div class="icon">
+          <div class="icon__img">
+            <img src="images/Phone.png">
+          </div>
+          <h5>[02] 9572 1899</h5>
+          <br>
+        </div>
+
+        <div class="icon">
+        <div class="icon__img">
+          <img src="images/Fax-copy.png">
+        </div>
+        <h5>Fax-02 9672 1887</h5>
+        <br>
+      </div>
+
+      <div class="icon">
+      <div class="icon__img">
+        <img src="images/Email.png">
+      </div>
+      <h6>saleskkg lass.com.au</h6>
+    </div>
+  </div>
+</div>
+<!--end left-->
+
+<!--start center-->
+<div class="item__center">
+  <div class="item__center__head">
+    <h3>HOURS</h3>
+  </div>
+  <div class="icon">
+  <div class="icon__img">
+    <img src="images/Hours.png">
+  </div>
+  <h4>Office Hours</h4>
+  <h6>Monday-Thursday: 9am-4:30pm </h6>
+  <h6>Friday: 8am-3:30pm</h6>
+  <h6>Satturday: CLOSED</h6>
+  <h6>Sunday: CLOSED</h6>
+  <br>
+</div>
+
+<div class="icon">
+<div class="icon__img">
+  <img src="images/Production.png">
+</div>
+<h4>Production Hours</h4>
+<h6>Monday-Thursday: 6am-2.30pm </h6>
+<h6>Friday: 8am-3:30pm</h6>
+<h6>Satturday: CLOSED</h6>
+<h6>Sunday: CLOSED</h6>
+<br>
+</div>
+
+<div class="icon">
+<div class="icon__img">
+  <img src="images/Pickup.png">
+</div>
+<h4>Customer Pick Ups</h4>
+<h6>Monday-Thursday: 6am-2:30pm </h6>
+<h6>Friday: 6am-12pm</h6>
+</div>
+</div>
+
+<!--start right-->
+<div class="item__right">
+  <div class="item__right__head">
+    <h3>QUICK CONTACT</h3>
+    <div class="form">
+      <div class="form__row">
+        <input type="text" placeholder="NAME*">
+        <input type="text" placeholder="EMAIL*">
+        <input type="text" name="PHONE">
+        <input type="text" name="WHAT IS THE FRIST LETTER IN GLASS?*">
+        <input type="text" name="MESSAGE">
+      </div>
+      <div class="form__row">
+        <input type="submit" value="SEND">
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<!--end grid-->
+  
+  <!--start brand-->
+  <div class="brand">
+      <div class="brand__img">
+        <img src="" alt="hinh nen">
+      </div>
+<!--end brand-->
+
+      <div class="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <h2>JOIN OUR MAILING LIST</h2>
+          <br>
+          <p>Complete the form below and we'll keep you up to data with our latest new, projects and industry updates.</p>
+        </div>
+
+        <div class="contact__form">
+            <div class="contact__form__row">
+              <input type="text" placeholder="NAME*">
+              <input type="text" placeholder="EMAIL*">
+            </div>
+            <div class="contact__form__row">
+              <input type="submit" value="SEND">
+            </div>
+          </div>
+
+        </div>
+      <div>
+        
+      
+</main>
+</body>
+{% block footer_scripts %}
+<script src="../js/lib/media.match.min.js"></script>
+<script src="../js/lib/enquire.min.js"></script>
+<script src="../js/script.js"></script>
+{% endblock %}
+</body>
 </html>
