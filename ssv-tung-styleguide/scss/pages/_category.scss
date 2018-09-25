@@ -29,21 +29,19 @@
     height: auto;
   
   &__wrap {
-  	margin: 0 -10px;
   	padding: 20px 0 0;
   }
   &__list {
     display: flex;
- 	  flex-wrap: nowrap;
  	  flex-direction: row;
 		padding: 10px 0;
+		justify-content: space-between;
   }
   
 	&__item {
-		width: calc(100%/3);
+		width: calc(100%/3 - 15px);
 		position: relative;
 		color: white;
-		padding: 0 10px;
 		
 		&__special {
 			position: absolute;
