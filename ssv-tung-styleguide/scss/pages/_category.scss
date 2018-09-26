@@ -27,52 +27,40 @@
 .grid-image {
     width: 100%;
     height: auto;
+
+  &__hover {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+
+			h3 {
+		  
+		  color: #fff;
+	    text-align: center;
+	    line-height: 40px;
+		  }
+		}
   
   &__wrap {
-  	margin: 0 -10px;
+
   	padding: 20px 0 0;
   }
   &__list {
     display: flex;
- 	  flex-wrap: nowrap;
+ 	  justify-content: space-between;
  	  flex-direction: row;
 		padding: 10px 0;
   }
   
 	&__item {
-		width: calc(100%/3);
+		width: calc(100%/3 - 15px);
 		position: relative;
 		color: white;
-		padding: 0 10px;
 		
-		&__special {
-			position: absolute;
-
-			h2 {
-		  
-		  color: #fff;
-	    top:30%;
-	    left: 0;
-	    right: 0;
-	    text-align: center;
-	    line-height: 40px;
-		  }
-
-		  p {
-			top: 170px;
-			left: 15%;
-		  }
-
-		  a {
-			top: 250px;
-			left: 20%;
-			padding: 10px 50px;
-			border: #fff 1px;
-			text-decoration: none;
-			color: #fff;
-			font-weight: bold;
-		  }
-		}
+		
+		
 		img {
 			width: 100%;
 		}
