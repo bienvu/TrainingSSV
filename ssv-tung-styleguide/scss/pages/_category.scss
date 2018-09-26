@@ -44,7 +44,6 @@
 		}
   
   &__wrap {
-
   	padding: 20px 0 0;
   }
   &__list {
@@ -52,6 +51,7 @@
  	  justify-content: space-between;
  	  flex-direction: row;
 		padding: 10px 0;
+		justify-content: space-between;
   }
   
 	&__item {
@@ -131,4 +131,3 @@
 	    }
 	}
 }
-
